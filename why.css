@@ -1,5 +1,5 @@
 * {
-  background-color: rgb(254, 249, 241);
+  background-color: rgb(254,249,241);
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight:50;
 }
@@ -14,16 +14,9 @@
 
 
 #top_container{
-  /* border: 1px solid red; */
-  /* height: 250px; */
+ 
   width: 80%;
-  /* background-color: rgb(255, 248, 241); */
-  background-image: url("https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/auras/aura-spike-bottom-right.jpg");
-   background-repeat: no-repeat;
-  background-size: 180% 100%;
-  
-  /* font-family: Helvetica, Arial, sans-serif;
-  color: #1d1e1c; */
+  background: transparent;
   margin: auto;
 }
 h3{
@@ -33,7 +26,8 @@ h3{
   line-height: 25px;
 }
 span{
-    border: 1px solid red;
+    /* border: 1px solid red; */
+background:transparent;
     margin-left: 10px;
     color:grey;
     font-size: 13px;
@@ -112,21 +106,31 @@ h1 {
   justify-content: space-between;
 }
 #lst_container {
+  /* border: 1px solid red
+  ; */
+  background-color: white;
   display: flex;
   width: 80%;
   margin: auto;
   margin-top: 80px;
   justify-content: space-between;
 }
-#logo {
-  /* background-color:#03030a; */
-  /* color: aliceblue; */
+#whtback{
+  width: 100%;
+  /* border: 1px solid black; */
 
-  /* filter: grayscale(100%); */
+  background-color: white;
+
+}
+#logo {
+ 
+opacity: .2;
   display: flex;
-  justify-content: space-around;
-  margin-top: 60px;
-  /* margin-bottom: 50px; */
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top:30px ;
+  width: 90%;
+  margin: auto;
 }
 ul {
   list-style: none;
@@ -152,3 +156,6 @@ ul li:before {
 .imagediv {
   width: 50%;
 }
+/* .logosmall{
+  border: 1px solid blue;
+} */
