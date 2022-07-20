@@ -1,0 +1,22 @@
+#top_container{
+  border: 1px solid red;
+  height: 250px;
+  width: 100%;
+  /* background-color: rgb(255, 248, 241); */;
+}
+hr{
+    background-color: rgb(251, 92, 0);
+    width: 100%;
+    height: 0px;
+   
+}
+button{
+    background-color: rgb(251, 92, 0);
+    color: white;
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 12px;
+    font-size:  15px;
+    font-weight: bold;
+}
