@@ -6,7 +6,7 @@
     height: 600px;
 
 }
-#img{
+#imag{
     display: flex;
     position: relative;
     left: 40px;
@@ -40,7 +40,7 @@
 }
 
 
-#img>svg{
+#imag>svg{
 color: white;
 margin-left: 40%;
 }

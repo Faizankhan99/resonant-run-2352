@@ -3,7 +3,7 @@
      border: 1px solid red;
       display: flex;
       justify-content: space-around;
-    
+    height: 70px;
     }
    #p{
     display: flex;
@@ -27,11 +27,12 @@
 
     #img{
         display: flex;
-     position: relative;
-      left: 70px;
+         position: relative;
+        left: 70px;
         align-items: center;
-    }
-    #img>a{
+        /* top: -80px; */
+    } 
+   #img>a{
      color:rgba(250,93,0,100%);
     }
     #nav>p{

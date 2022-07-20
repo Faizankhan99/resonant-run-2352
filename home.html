@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navabr</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        #top{
+        border: 1px solid red;
+        height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav"></div>
+
+
+<div id="top">
+
+</div>
+
+
+    <div id="footer"></div>
+</body>
+</html>
+
+
+<script type="module" >
+  import nav from "./components/nav.js"
+  document.getElementById("nav").innerHTML =nav();
+
+
+  import footer from "./components/footer.js"
+    document.getElementById("footer").innerHTML = footer();
+function go(){
+    window.location.href="https://www.getharvest.com/forecast"
+}
+</script>
