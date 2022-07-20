@@ -152,9 +152,12 @@ ul li:before {
 .dimg {
   /* border:1px solid black; */
   width: 90%;
+  display: flex;
+  justify-content: space-between;
 }
 .imagediv {
   width: 50%;
+
 }
 /* .logosmall{
   border: 1px solid blue;
