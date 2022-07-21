@@ -1,0 +1,16 @@
+body{
+    background-color:rgb(255 248 241);
+}
+#firstsent
+{
+    font-size: 20px;
+    font-style: normal;
+    font-family: sans-serif;
+    color: #1d1e1c;
+    text-align: left;
+     
+}
+#secondsent{
+ font-size: 30px;
+
+}
