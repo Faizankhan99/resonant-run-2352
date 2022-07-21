@@ -1,9 +1,17 @@
    
     #nav{
-     border: 1px solid red;
+        position:sticky;
+        top: 0;
+        left: 0;
+        width: 100%;
+     /* border: 1px solid red; */
       display: flex;
       justify-content: space-around;
     height: 70px;
+    background-color: #FFFFFF;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
     }
    #p{
     display: flex;
@@ -72,9 +80,14 @@
     align-items: center;
     background-color: rgba(250,93,0,100%);
     font-size: 19px;
-    color: white;
+   
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
     border: none;
+}
+
+#p+div>button>a{
+    text-decoration: none;
+    color: white;
 }
 /* #p+div>button */
