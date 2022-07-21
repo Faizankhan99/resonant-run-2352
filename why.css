@@ -1,44 +1,34 @@
 * {
   background-color: rgb(254, 249, 241);
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight:50;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 50;
 }
-#background{
-    background-image: url("https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/auras/aura-spike-bottom-right.jpg");
-   background-repeat: no-repeat;
+#background {
+  background-image: url("https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/auras/aura-spike-bottom-right.jpg");
+  background-repeat: no-repeat;
   background-size: 180% 100%;
   /* border: 1px solid orange; */
   width: 100%;
-
 }
 
-
-#top_container{
-  /* border: 1px solid red; */
-  /* height: 250px; */
+#top_container {
   width: 80%;
-  /* background-color: rgb(255, 248, 241); */
-  background-image: url("https://19495563.fs1.hubspotusercontent-na1.net/hubfs/19495563/raw_assets/public/harvest-theme/images/auras/aura-spike-bottom-right.jpg");
-   background-repeat: no-repeat;
-  background-size: 180% 100%;
-  
-  /* font-family: Helvetica, Arial, sans-serif;
-  color: #1d1e1c; */
+  background: transparent;
   margin: auto;
 }
-h3{
-    color: rgb(28,31,28);
-    font-family: Helvetica, Arial, sans-serif;
+h3 {
+  color: rgb(28, 31, 28);
+  font-family: Helvetica, Arial, sans-serif;
   /* color: #1d1e1c; */
   line-height: 25px;
 }
-span{
-    border: 1px solid red;
-    margin-left: 10px;
-    color:grey;
-    font-size: 13px;
+span {
+  /* border: 1px solid red; */
+  background: transparent;
+  margin-left: 10px;
+  color: grey;
+  font-size: 13px;
 }
-
 
 hr {
   margin-top: 50px;
@@ -50,9 +40,9 @@ hr {
   margin-bottom: 10px;
   width: 80%;
 }
-.topline{
-    width: 100%;
-    border: 1px;
+.topline {
+  width: 100%;
+  border: 1px;
   height: 0.8px;
   background-color: rgb(251, 92, 0);
 }
@@ -75,7 +65,7 @@ button:hover {
 h1 {
   font-weight: 400;
   text-decoration: none;
-  
+
   font-style: normal;
   color: #1d1e1c;
   font-size: 40px;
@@ -112,21 +102,29 @@ h1 {
   justify-content: space-between;
 }
 #lst_container {
+  /* border: 1px solid red
+  ; */
+  background-color: white;
   display: flex;
   width: 80%;
   margin: auto;
   margin-top: 80px;
   justify-content: space-between;
 }
-#logo {
-  /* background-color:#03030a; */
-  /* color: aliceblue; */
+#whtback {
+  width: 100%;
+  /* border: 1px solid black; */
 
-  /* filter: grayscale(100%); */
+  background-color: white;
+}
+#logo {
+  opacity: 0.2;
   display: flex;
-  justify-content: space-around;
-  margin-top: 60px;
-  /* margin-bottom: 50px; */
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 30px;
+  width: 90%;
+  margin: auto;
 }
 ul {
   list-style: none;
@@ -148,7 +146,12 @@ ul li:before {
 .dimg {
   /* border:1px solid black; */
   width: 90%;
+  display: flex;
+  justify-content: space-between;
 }
 .imagediv {
   width: 50%;
 }
+/* .logosmall{
+  border: 1px solid blue;
+} */
