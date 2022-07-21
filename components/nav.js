@@ -16,8 +16,8 @@ function nav(){
 </div>
 
 <div>
-<p><a href=""> Sign in</a></p>
- <button>Try Harvest free</button>
+<p><a href="login.html"> Sign in</a></p>
+ <button> <a href="singup.html"> Try Harvest free </a></button>
 </div>
 
 `
