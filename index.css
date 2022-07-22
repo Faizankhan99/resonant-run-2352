@@ -364,3 +364,71 @@ margin-bottom: 7%;
 #bottom_l>div>button{
 margin-left: 20px;
 }
+/* sliding ......................................................*/
+#slid{
+    margin-top: 5%;
+    /* border: 1px solid red; */
+    margin-left: 10%;
+    margin-bottom: -5%;
+    font-family: sans-serif;
+}
+#slid>h4{
+    margin-left: 53px;
+    font-size: 25px;
+    color: rgba(250, 93, 0);
+    margin-bottom: -0px;
+}
+#slid>h2{
+    font-size: 53px;
+    font-weight: 200;
+    margin-bottom: -10px;
+}
+#slid>p{
+    font-size: 30px;
+    margin-left: 45px;
+    font-weight: 100;
+}
+
+
+
+#sliding{
+      
+    /* border: 1px solid red; */
+    margin-top: 8%;
+
+}
+
+#sliding>div{
+    width: 80%;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content:space-around;
+    margin: auto;
+    /* margin-top: 13%; */
+   
+}
+#sliding>div>div{
+    /* border: 1px solid red; */
+    width: 48%;
+   margin-left: 10px;
+}
+#sliding>div>div>p{
+    /* border: 1px solid red; */
+    font-size: 30px;
+    width: 100;
+    font-family: sans-serif;
+}
+#sliding>div>div>h3{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 520;
+}
+#sliding>div>img{
+    margin-left: 30px;
+    width:48%;
+    position: relative;
+   
+}
+#sliding>div>img+hr{
+    margin-left: 30px;
+}
