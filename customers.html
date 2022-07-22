@@ -43,10 +43,11 @@
         #companyName{
             display: grid;
             grid-template-columns: repeat(3,1fr);
-            grid-column: auto;
+            grid-template-rows: auto;
             gap: 20%;
             margin: auto;
         }
+
     </style>
 </head>
 <body>
@@ -122,10 +123,10 @@
                 <br>
                 <a href="">Web development & IT </a>
             </div>
-            <div id="companyName">
-                <div style="margin-left: 60px;"> 
-                    <img style= "height: 25;" src="https://www.getharvest.com/hubfs/customers/rana/rana-logo.svg" alt="">
-                     <P>
+            <div id="companyName" >
+                <div style="margin-left: 50px;">
+                    <!-- <img src="https://www.getharvest.com/hubfs/customers/rana/rana-logo.svg" alt="" />
+                     <P style="margin-top: -150px;">
                         Rana , an ecological design 
                         <br>
                         company , uses Harvest to keep Track 
@@ -134,8 +135,8 @@
                         <br>
                         and billable in one 
                         <br> place.
-                    </P>
-                </div>
+                    </P> -->
+                </div> -->
                 <div>2</div>
                 <div>3</div>
                 <div>4</div>
@@ -162,3 +163,27 @@
     </div>
 </body>
 </html>
+<script>
+
+   let cont= document.getElementById("companyName");
+
+   let div1 = document.createElement("div");
+   div1
+   let img1 = document.createElement("img");
+   img1.src= "https://www.getharvest.com/hubfs/customers/rana/rana-logo.svg"
+   let p = document.createElement("p");
+   p.innerText="Rana , an ecological design";
+
+//    let div2 = document.createElement("div");
+//    div2
+//    let div3 = document.createElement("div");
+//    div3
+//    let div4 = document.createElement("div");
+//    div4
+//    let div5 = document.createElement("div");
+//    div5
+
+   div1.append(img1,p);
+   cont.append(div1);
+
+</script>

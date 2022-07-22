@@ -1,0 +1,436 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins',
+        sans-serif;
+    box-sizing: border-box;
+}
+
+.nav__bar {
+    position: fixed;
+    left: 0%;
+    top: 0;
+    width: 100%;
+    min-height: 7vh;
+    padding: 0 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #F47B1A;
+    transition: all 0.2s ease;
+    z-index: 100;
+}
+
+.nav__bar__links {
+    flex: 2 1 50%;
+}
+
+.nav__bar__links ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav__bar__links ul li {
+    /* margin: 5px 0; */
+    padding: 15px 5px;
+    transition: all 0.1s ease;
+}
+
+.nav__bar__links ul li a,
+.nav__bar__actions a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.nav__bar__links__hero {
+    background-color: #ffffff4b;
+}
+
+.nav__bar__actions {
+    flex: 1 1 15%;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.nav__bar__actions>a {
+    font-size: 14px;
+    padding: 15px 10px;
+}
+
+.nav__bar__actions__dropdown__button {
+    position: relative;
+}
+
+.nav__bar__actions__dropdown__button button {
+    width: 120px;
+    padding: 12px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.nav__bar__actions__dropdown__button button img {
+    width: 31px;
+    height: 31px;
+}
+
+.nav__bar__actions__dropdown__button__list {
+    position: absolute;
+    top: 7.5vh;
+    right: 10%;
+    background-color: white;
+    color: black;
+    /* padding: 15px; */
+    width: 160px;
+    font-size: 15px;
+    display: none;
+    border: 1px solid #444;
+    box-shadow: 0 0 3px gray;
+}
+
+.nav__bar__actions__dropdown__button__list a {
+    display: block;
+    color: #444;
+    font-weight: 500;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.nav__bar__actions__dropdown__button__list__show {
+    display: block;
+}
+
+.nav__bar__actions__dropdown__button__list hr {
+    border: 1px solid #999;
+}
+
+.nav__bar__actions__dropdown__button__list__user__name {
+    background-color: #F4F4F4;
+    border-bottom: 1px solid rgb(161, 159, 159);
+    padding: 10px 15px;
+}
+
+.nav__bar__actions__dropdown__button__list__user__name p {
+    color: #444;
+}
+
+.nav__bar__actions__dropdown__button__list::before {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    font-size: 45px;
+    color: #F4F4F4;
+    /* box-shadow: 0 0 3px #444; */
+    color: #F4F4F4;
+    position: absolute;
+    top: -8%;
+    right: 10%;
+}
+
+/* Css for timesheet navbar */
+.topGrey__box {
+    border: 1px solid #EEEEEE;
+    height: 40px;
+    background-color: #EEEEEE;
+    margin-top: 3.6%;
+}
+
+.time__button {
+    border: 1px;
+    margin-left: 16%;
+}
+
+.time__button>button {
+    border: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 13px;
+    height: 40px;
+    margin-right: 1%;
+    outline: none;
+    cursor: pointer;
+}
+
+.time__button>button>a {
+    color: grey;
+    text-decoration: none;
+}
+
+
+.time__button button:hover {
+    border-bottom: 3px solid #F47A19;
+}
+
+.middle__box {
+    display: flex;
+    flex-direction: row;
+    border: 1px;
+    height: 36px;
+    margin: 3% 0 2%;
+}
+
+.middle__box>.leftarrow__button {
+    height: 36px;
+    width: 2.5%;
+    margin-left: 23%;
+    cursor: pointer;
+}
+
+.middle__box>.rightarrow__button {
+    height: 36px;
+    width: 2.5%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.middle__box>strong {
+    font-size: 20px;
+    border: 1px;
+    width: 17%;
+}
+
+.middle__box>span {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.calender__button {
+    position: relative;
+    height: 20px;
+    height: 36px;
+    width: 2.5%;
+    margin-left: 20.5%;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.middle__box>.day__button {
+    height: 36px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.timeTrackingActivating__button {
+    position: absolute;
+    height: 65px;
+    width: 4.2%;
+    margin-left: 17%;
+    top: 25.5%;
+    font-size: 43px;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 4px;
+}
+
+.monday__button {
+    width: 6.3%;
+    height: 45px;
+    text-align: left;
+    padding-left: 1%;
+    margin-left: 23%;
+    cursor: pointer;
+}
+
+.weekdays__button {
+    width: 6.3%;
+    height: 45px;
+    text-align: left;
+    padding-left: 1%;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+.day__page>div>.totalWeek__button {
+    border: 1px solid grey;
+    width: 8.9%;
+    height: 45px;
+    text-align: center;
+    padding: 7px 15px;
+    margin-left: -5px;
+    margin-bottom: -100px;
+}
+
+.daysproject__box {
+    width: 53.5%;
+    height: 550px;
+    background-color: #f4f4f4;
+    border: 1px solid #cccccc;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #888;
+    font-size: 18px;
+    padding: 60px;
+    margin-left: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bear__image {
+    width: 300px;
+}
+
+
+/*  Css for week page */
+
+.weeksmiddle__box {
+    display: flex;
+    flex-direction: row;
+    border: 1px;
+    height: 36px;
+    margin: 3% 0 2%;
+}
+
+.weeksmiddle__box>.weeksleftarrow__button {
+    height: 36px;
+    width: 2.5%;
+    margin-left: 16.5%;
+    cursor: pointer;
+}
+
+.weeksmiddle__box>.weeksrightarrow__button {
+    height: 36px;
+    width: 2.5%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.weekscalender__buttonforweek {
+    height: 36px;
+    width: 2.5%;
+    margin-left: 19%;
+    margin-right: 0.5%;
+    cursor: pointer;
+}
+
+.weeksday__button {
+    height: 36px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.weeksmiddle__box>strong {
+    font-size: 25px;
+}
+
+.weeksmiddle__box>span {
+    font-size: 25px;
+    margin-left: 5px;
+}
+
+.weekproject__box {
+    width: 65.8%;
+    height: 470px;
+    background-color: #f4f4f4;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    color: #888;
+    font-size: 18px;
+    padding: 60px;
+    margin-left: 16.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.weekBear__image {
+    width: 450px;
+}
+
+.paragraphBelow__bearimage {
+    text-align: center;
+}
+
+.createProject__button {
+    /* height: 35px; */
+    /* width: 25%; */
+    padding: 10px;
+    background-color: #3CB12B;
+    border: 1px solid #3CB12B;
+    border-radius: 3px;
+    outline: #3CB12B;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+.createProject__button a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.newRow__button {
+    height: 35px;
+    width: 7%;
+    font-size: 17px;
+    margin: 2% 0 1% 16.5%;
+    color: grey;
+    border: 1px solid #cccccc;
+}
+#week__page {
+    display: none;
+}
+/* Footer */
+footer {
+    width: 100%;
+    padding: 20px 15%;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #999;
+    margin-top: 100px;
+}
+footer div:nth-child(1) button {
+    padding: 8px 15px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    background: linear-gradient(#ffffff, #f1f1f1);
+    border: 1px solid #999;
+    margin-left: 15px;
+    transition: all 0.1s ease;
+}
+footer div {
+    display: flex;
+    align-items: baseline;
+}
+footer div:nth-child(1) p {
+    font-size: 13px;
+    color: #555;
+}
+footer div:nth-child(2) a {
+    color: rgb(156, 156, 156);
+    text-decoration: none;
+    margin-left: 15px;
+    transition: all 0.1s ease;
+    color: #555;
+
+}
+/* Animations */
+.nav__bar__actions__dropdown__button__list a:hover,
+.dropDown__buttons__active__projects a:hover,
+.dropDown__buttons__client__search a:hover,
+.form__tasks__suggestions .form__tasks__suggestions__item:hover {
+    background-color: #0078c9;
+    color: white;
+}
+
+.nav__bar__links ul li:hover,
+.nav__bar__actions>a:hover,
+.nav__bar__actions__dropdown__button>button:hover {
+    background-color: #ffffff4b;
+}
