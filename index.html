@@ -7,7 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -100,11 +100,39 @@
     <p id="btn"><a href="">Browse integrations</a></p>
 </div>
 
-
 </div>
 </div>
 </div>
 <hr  style="background-color:red ; width: 80%; ">
+<!-- sliding start -->
+<style>
+  
+</style>
+<div id="slid">
+    <h4>CUSTOMER STORIES</h4>
+    <h2>Helping teams thrive since 2006</h2>
+    <p>Teams of all sizes, types, and industries trust Harvest to track their time.</p>
+
+</div>
+<div id="sliding">
+    <div>
+            <hr>
+        <div>
+         <p>We really focus on work-life balance in remote work… Time tracking 
+         reveals if somebody is overburdened and that becomes an immediate conversation.
+        </p>
+        <h3>Noah Gedrich, Zehner</h3>
+        </div>
+        <hr>
+            <img src="https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-cooper.jpg?width=840&height=561&name=home-photo-cooper.jpg" alt="">
+        
+        <hr>
+        </div> 
+
+
+    </div>
+<hr  style="background-color:red ; width: 80%; ">
+<!-- sliding  end--> 
 <div id="bottom">
 <div id="b_l">
     <p>LEARNING RESOURCES</p>
@@ -171,3 +199,60 @@ function go(){
     window.location.href="https://www.getharvest.com/forecast"
 }
 </script>
+
+<script>
+
+
+    let arr=[
+      {p:"We really focus on work-life balance in remote work… Time tracking reveals if somebody is overburdened and that becomes an immediate conversation",h:"Noah Gedrich, Zehner",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-dovetail.jpg?width=840&height=561&name=home-photo-dovetail.jpg",hr:""},
+      {p:"We needed something that worked, something super simple, because we don’t want to have to teach people how to use it as part of onboarding.",h:"Nick Frandsen, Dovetail",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-cooper.jpg?width=840&height=561&name=home-photo-cooper.jpg",},
+      {p:"'Having an easy, clean way to track time allows us to focus on the tough engineering problems where we bring value to our clients.,",h:"Genevieve Laing, Cooper Perkins",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-luminary.jpg?width=840&height=561&name=home-photo-luminary.jpg",},
+      {p:"Harvest was key to helping me start my company – it allowed us to move from managing a lot of subcontractors to managing a staff quite easily.",h:"Sara Holoubek, Luminary Labs",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=840&height=561&name=home-photo-zehner.jpg",},
+      {p:"We really focus on work-life balance in remote work… Time tracking reveals if somebody is overburdened and that becomes an immediate conversation",h:"Noah Gedrich, Zehner",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-dovetail.jpg?width=840&height=561&name=home-photo-dovetail.jpg",},
+      {p:"We needed something that worked, something super simple, because we don’t want to have to teach people how to use it as part of onboarding.",h:"Nick Frandsen, Dovetail",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-cooper.jpg?width=840&height=561&name=home-photo-cooper.jpg"},
+      {p:"'Having an easy, clean way to track time allows us to focus on the tough engineering problems where we bring value to our clients.,",h:"Genevieve Laing, Cooper Perkins",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-luminary.jpg?width=840&height=561&name=home-photo-luminary.jpg"},
+      {p:"Harvest was key to helping me start my company – it allowed us to move from managing a lot of subcontractors to managing a staff quite easily.",h:"Sara Holoubek, Luminary Labs",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=840&height=561&name=home-photo-zehner.jpg"},
+      {p:"We really focus on work-life balance in remote work… Time tracking reveals if somebody is overburdened and that becomes an immediate conversation",h:"Noah Gedrich, Zehner",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-dovetail.jpg?width=840&height=561&name=home-photo-dovetail.jpg"},
+      {p:"We needed something that worked, something super simple, because we don’t want to have to teach people how to use it as part of onboarding.",h:"Nick Frandsen, Dovetail",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-cooper.jpg?width=840&height=561&name=home-photo-cooper.jpg"},
+      {p:"'Having an easy, clean way to track time allows us to focus on the tough engineering problems where we bring value to our clients.,",h:"Genevieve Laing, Cooper Perkins",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-luminary.jpg?width=840&height=561&name=home-photo-luminary.jpg"},
+      {p:"Harvest was key to helping me start my company – it allowed us to move from managing a lot of subcontractors to managing a staff quite easily.",h:"Sara Holoubek, Luminary Labs",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=840&height=561&name=home-photo-zehner.jpg"},
+      {p:"We really focus on work-life balance in remote work… Time tracking reveals if somebody is overburdened and that becomes an immediate conversation",h:"Noah Gedrich, Zehner",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-dovetail.jpg?width=840&height=561&name=home-photo-dovetail.jpg"},
+      {p:"We needed something that worked, something super simple, because we don’t want to have to teach people how to use it as part of onboarding.",h:"Nick Frandsen, Dovetail",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-cooper.jpg?width=840&height=561&name=home-photo-cooper.jpg"},
+      {p:"'Having an easy, clean way to track time allows us to focus on the tough engineering problems where we bring value to our clients.,",h:"Genevieve Laing, Cooper Perkins",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-luminary.jpg?width=840&height=561&name=home-photo-luminary.jpg"},
+      {p:"Harvest was key to helping me start my company – it allowed us to move from managing a lot of subcontractors to managing a staff quite easily.",h:"Sara Holoubek, Luminary Labs",img:"https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=840&height=561&name=home-photo-zehner.jpg"},
+  
+  
+    ]
+  localStorage.setItem("arr",JSON.stringify( arr))
+  
+  
+  let slide=JSON.parse(localStorage.getItem("arr"))
+  let con=document.querySelector("#sliding")
+  let i=0
+  let id;
+  id=setInterval(function() {
+  if(i==slide.lenght){
+      i=0
+  }
+  else{
+      let div=document.createElement("div")
+  let div2=document.createElement("div")
+  let p=document.createElement("p")
+  p.innerText=slide[i].p
+  let h=document.createElement("h3")
+  h.innerText=slide[i].h
+  let img=document.createElement("img")
+  img.src=slide[i].img
+  con.innerHTML=null
+  div2.append(p,h)
+  div.append(div2,img) 
+  con.append(div)
+}
+i++   
+  
+  
+  },4000)
+  
+  
+  
+  </script>
