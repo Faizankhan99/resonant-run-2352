@@ -9,7 +9,7 @@
 <body>
     <div id="mainnav">
         <ul>
-         <a href="#"> <li>Time</li></a>
+         <a href="timesheet.html"> <li>Time</li></a>
          <a href="expense.html"><li>Expenses</li></a>  
          <a href="#"><li>Projects</li></a>   
           <a href="#"> <li>Team</li></a>
@@ -21,16 +21,8 @@
             <ul>
                 <li>Settings</li>
                 <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-flat-icon-social-media-user-vector-portrait-unknown-human-image-default-avatar-profile-flat-icon-184330869.jpg" alt="user" width="20px" style="margin-left: 20px;">
-                <li onclick="drop()" style ="margin-left: 5px;">User</li>
+                <li  style ="margin-left: 5px;" id="use" onclick="home()">User</li>
                 <div id="dropdown"></div>
-                <!-- <li> My Profile</li>
-                <li> My time report</li>
-                <li> Notifications</li>
-                <li> Refer a friend</li>
-                 <hr>
-                 <li> Switch accounts</li>
-                 <li> Sign out</li> -->
-
             </ul>
         </div>
         
@@ -48,14 +40,6 @@
             With online payment, you’ll get paid twice as fast.
         </p>
     </div>
-
-    <!-- <div id="infoot">
-        <p> You have only 27 days left in your free trail </p>
-        <button>Upgrade</button>
-    </div>
-    <div>
-        <img src="https://www.getharvest.com/hubfs/featured-image-home%20%281%29.png" alt="">
-         -->
     
 </body>
 </html>
@@ -148,20 +132,18 @@
  let cancel = ()=>{
    
     window.location.reload();
-    
-
-
 
  }
 
 
-//  let drop=()=>{
-   
-//     let cont = document.getElementById("dropdown");
-    
+ let name=localStorage.getItem("Name") ||[]
+console.log(name);
+  // document.querySelector("#use").innerText=`${name}`
+document.getElementById("use").innerText=name; 
 
-
-//  }
+let home=()=>{
+    window.location.href="index.html"
+}
 
 
 

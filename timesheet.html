@@ -19,40 +19,40 @@
         <nav class="nav__bar">
             <div class="nav__bar__links">
                 <ul>
-                    <li class="nav__bar__links__hero"><a href="../Time/timesheet.html">Time</a></li>
-                    <li><a href="../expenses/expenses.html">Expenses</a></li>
-                    <li><a href="../projects/projects.html">Projects</a></li>
-                    <li><a href="../teammember/teammember.html">Team</a></li>
+                    <li class="nav__bar__links__hero"><a href="timesheet.html">Time</a></li>
+                    <li><a href="expense.html">Expenses</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Team</a></li>
                     <li><a href="#">Reports</a></li>
-                    <li><a href="../invoiceOverview/invoiceoverview.html">Invoices</a></li>
-                    <li><a href="../manageclient/manageClient.html">Manage</a></li>
+                    <li><a href="invoice.html">Invoices</a></li>
+                    <!-- <li><a href="#">Manage</a></li> -->
                 </ul>
             </div>
             <div class="nav__bar__actions">
-                <a href="#">Help</a>
+                <!-- <a href="#">Help</a> -->
                 <a href="#">Settings</a>
                 <div class="nav__bar__actions__dropdown__button" id="nav__bar__actions__dropdown__button">
                     <button>
-                        <img src="https://proxy.harvestfiles.com/production_harvestapp_public/uploads/users/avatar/003/561/355/092fef1ec994a51c9828b147545480b8f69f12d0/normal.?1609215247"" alt="
+                        <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-flat-icon-social-media-user-vector-portrait-unknown-human-image-default-avatar-profile-flat-icon-184330869.jpg" alt="
                             avatar">
-                        <span>Naeem</span>
+                        <span onclick="home()" id="use">User</span>
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </button>
                     <div class="nav__bar__actions__dropdown__button__list"
                         id="nav__bar__actions__dropdown__button__list">
                         <div class="nav__bar__actions__dropdown__button__list__user__name">
-                            <h3>Naeem Shaik</h3>
-                            <p>Naeem</p>
+                            <!-- <h3>Naeem Shaik</h3>
+                            <p>Naeem</p> -->
                         </div>
-                        <a href="#">My Profile</a>
+                        <!-- <a href="#">My Profile</a>
                         <a href="#">My Time Report</a>
                         <a href="#">Notifications</a>
                         <a href="#">Referrals</a>
                         <hr />
                         <a href="#">Apps</a>
                         <a href="#">Integrations</a>
-                        <hr />
-                        <a href="../index.html">Sign Out</a>
+                        <hr /> -->
+                        <a href="index.html">Sign Out</a>
                     </div>
                 </div>
             </div>
@@ -147,3 +147,14 @@
 </body>
 
 </html>
+<script>
+let name=localStorage.getItem("Name") ||[]
+console.log(name);
+  // document.querySelector("#use").innerText=`${name}`
+document.getElementById("use").innerText=name; 
+
+let home=()=>{
+    window.location.href="index.html"
+}
+
+</script>

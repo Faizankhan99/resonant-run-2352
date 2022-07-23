@@ -7,8 +7,12 @@
   display: flex;
   border: 1px solid red;
   background-color: rgb(251, 93, 1);
-  width: 100%;
+  width: 101%;
   height: 50px;
+  position: relative;
+  top:-8px;
+  left: -7px;
+
 }
 ul {
   display: flex;
@@ -113,6 +117,15 @@ button {
 }
 
 a{
+  cursor: pointer;
     text-decoration: none;
     color: white;
+}
+
+#upgr{
+
+  background-color: transparent;
+  color: grey;
+  border: 1px solid grey;
+
 }
