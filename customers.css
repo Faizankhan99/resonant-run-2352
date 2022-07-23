@@ -1,0 +1,60 @@
+#main{
+    width: 90%;
+    height: 5000px;
+    padding: 50px;
+    background-color: antiquewhite;
+
+}
+#overall{
+    margin: 100px;
+    text-align: center;
+}
+#firstBox,img{
+    height:400px;
+    width: 100%;
+    border-radius: 10%;
+    display: flex;
+}
+h3{
+    color: #ffa806e0;
+}
+#firstBoxtax{
+    text-align:center;
+}
+button{
+    background-color: black;
+    color: white;
+    border-radius: 10%;
+    padding: 2%;
+}
+#backImage{
+    padding: 30px;
+    justify-content: right;
+    display: flex;
+}
+#companyName{
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 20%;
+    margin: auto;
+    
+}
+#companyName img {
+    height: 50px;
+    margin-left: 40px;
+    box-shadow: rgb(247, 247, 248) 0px 7px 29px 0px;
+}
+#companyName p{
+    font-weight: bold;
+    margin-left: 60px;
+    text-align: center;
+    box-shadow: rgb(247, 247, 248) 0px 7px 29px 0px;
+}
+#two a{
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    gap: 20px;
+}
