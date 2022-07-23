@@ -1,0 +1,160 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harvest-Expenses</title>
+    <link rel="stylesheet" href="expense.css" />
+  </head>
+  <body>
+    <div id="mainnav">
+      <ul>
+        <a href="timesheet.html"> <li>Time</li></a>
+        <a href="expense.html"><li>Expenses</li></a>
+        <a href="#"><li>Projects</li></a>
+        <a href="#"> <li>Team</li></a>
+        <a href="#"> <li>Reports</li> </a>
+        <a href="invoice.html"> <li>Invoices</li></a>
+        <a href="#"> <li>Manage</li></a>
+      </ul>
+      <div id="subnav">
+        <ul>
+          <li>Settings</li>
+          <img
+            src="https://thumbs.dreamstime.com/b/default-avatar-profile-flat-icon-social-media-user-vector-portrait-unknown-human-image-default-avatar-profile-flat-icon-184330869.jpg"
+            alt="user"
+            width="20px"
+            style="margin-left: 20px"
+          />
+          <li onclick="drop()" style="margin-left: 5px">User</li>
+          <div id="dropdown"></div>
+          <!-- <li> My Profile</li>
+                <li> My time report</li>
+                <li> Notifications</li>
+                <li> Refer a friend</li>
+                 <hr>
+                 <li> Switch accounts</li>
+                 <li> Sign out</li> -->
+        </ul>
+      </div>
+    </div>
+    <div id="seccont">
+      <h1>Expenses</h1>
+      <button onclick="expense()">+ Track expenses</button>
+      <div id="exdiv"></div>
+    </div>
+    <div id="thrcont">
+      <!-- <p>Track your first expense now</p> -->
+      <img
+        src="https://cache.harvestapp.com/static/illustrations/expense_onboard-AAC9C67E.png"
+        alt="expense"
+        style="margin-top: 40px"
+      />
+      <p>
+        Record those airline tickets, meals, miles, and other expenses in
+        Harvest <br />
+        so you can more accurately budget projects and invoice clients.
+      </p>
+    </div>
+
+    <!-- <div id="infoot">
+        <p> You have only 27 days left in your free trail </p>
+        <button id ="upgr">Upgrade</button>
+    </div>
+    <div>
+        <img src="https://www.getharvest.com/hubfs/featured-image-home%20%281%29.png" alt="" width="40px">
+         -->
+  </body>
+</html>
+
+<script>
+  let expense = () => {
+    let cont = document.getElementById("exdiv");
+    cont.innerHTML = "";
+    cont.style.border = "1px solid rgb(251,93,1)";
+    // cont.setAttribute("id","exdiv");
+    let btnexp = document.querySelector("button");
+    btnexp.style.backgroundColor = "rgb(158,208,169)";
+    btnexp.style.cursor = "not-allowed";
+
+    let div1 = document.createElement("div");
+
+    let dat = document.createElement("label");
+    dat.innerText = "Date";
+    dat.setAttribute("class", "dat");
+
+    let inp = document.createElement("div");
+    inp.innerText = "22/07/2022";
+    inp.setAttribute("class", "inpb");
+    inp.style.width = "80px";
+
+    div1.append(dat, inp);
+    // ******   *   *   ********************************
+    let div2 = document.createElement("div");
+
+    let cat = document.createElement("label");
+    cat.innerText = "Project/Category";
+    cat.setAttribute("class", "dat");
+
+    let inp1 = document.createElement("input");
+    inp1.placeholder = "Choose a project";
+    inp1.setAttribute("class", "inpb");
+
+    let inp2 = document.createElement("input");
+    inp2.placeholder = "Choose a category";
+    inp2.setAttribute("class", "inpb");
+
+    let inp3 = document.createElement("input");
+    inp3.placeholder = "Notes";
+    inp3.setAttribute("class", "inpb");
+
+    let aat = document.createElement("input");
+    aat.placeholder = "Attachments";
+    aat.setAttribute("id", "attah");
+
+    let chek = document.createElement("input");
+    chek.setAttribute("type", "checkbox");
+    chek.setAttribute("class", "inpb");
+    chek.style.marginLeft = "-80px";
+
+    let btn1 = document.createElement("button");
+    btn1.innerText = "Save Expenses";
+    btn1.setAttribute("id", "btnsave");
+
+    let btn2 = document.createElement("button");
+    btn2.innerText = "Cancel";
+    btn2.setAttribute("id", "btncan");
+    btn2.addEventListener("click", function () {
+      cancel();
+    });
+
+    div2.append(cat, inp1, inp2, inp3, aat, chek, btn1, btn2);
+
+    // ******************   *   *   **********
+    let div3 = document.createElement("div");
+
+    let amnt = document.createElement("label");
+    amnt.innerText = "Amount";
+    amnt.setAttribute("class", "dat");
+
+    let input = document.createElement("input");
+    input.setAttribute("class", "inpb");
+    input.placeholder = "$";
+    input.style.width = "100px";
+    input.style.height = "80px";
+
+    div3.append(amnt, input);
+
+    cont.append(div1, div2, div3);
+  };
+
+  let cancel = () => {
+    window.location.reload();
+  };
+
+  //  let drop=()=>{
+
+  //     let cont = document.getElementById("dropdown");
+
+  //  }
+</script>
