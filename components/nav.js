@@ -9,9 +9,9 @@ function nav(){
   <div id="para">    
    <p><a href="why.html"> Why Harvest? </a></p> 
    <p> <a href="feature.html">Features </a></p>
-   <p><a href=""> Customers </a></p>
+   <p><a href="customers.html"> Customers </a></p>
    <p> <a href="">Integrations </a></p>
-   <p><a href=""> Pricing </a></p>
+   <p><a href="pricing.html"> Pricing </a></p>
   </div>
   <div>
   <p><a href="login.html"> Sign in</a></p>
