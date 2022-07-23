@@ -14,7 +14,7 @@ function switchBetween() {
 }
 function Monday() {
     document.getElementById("change__monday").innerHTML = "Monday, 28 Dec"
-    document.getElementById("hide__text").style.display = "null"
+    document.getElementById("hide__text").style.display = "none"
 }
 
 function Tuesday() {
