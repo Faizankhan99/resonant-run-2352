@@ -7,6 +7,37 @@
     display:flex;
     margin-left: 150px;
   }
+  input[type="checkbox"]{
+    position:relative;
+    width:60px;
+    height:35px;
+    -webkit-appearance: none;
+    background:#ff6f00;
+    outline:none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    
+    transition: .5s;
+
+}
+
+input[type="checkbox"]:before {
+content:'';
+position:absolute;
+width:30px;
+height:30px;
+border-radius: 20px;
+top:0;
+left:0;
+background:#fff;
+transform:scale(1.1);
+transition:.5s;
+box-shadow:0 2px 5px rgba(0,0,0,.2);
+}
+
+input:checked[type="checkbox"]:before {
+left:40px;
+}
 #firstsent
 {
     font-size: 30px;
@@ -54,6 +85,7 @@
     margin: 20px 20px;
 
 }
+
 .price-description{
     /*border: 1px solid blue;*/
     width:40%;
@@ -67,9 +99,19 @@
 .price-description>div{
     font-size: 20px;
 }
+.amount{
+  font-size:50px;
+}
+.amount1{
+  font-size: 50px;
+}
 .total_pricing_plan{
-    border:1px solid brown;
+    /*order:1px solid brown;*/
+    height:200px;
+    width:300px;
+    text-align: center;
     margin:auto;
+    margin-top: 65px;
 }
 
 #USD{
@@ -173,9 +215,11 @@ hr {
 
   #faq-section{
     /*border: 1px solid black;*/
-    height:500px;
+    height:610px;
+    margin-top: 50px;
     display:flex;
     justify-content: space-between;
+    
   }
   .faq{
     list-style: none;
@@ -185,6 +229,7 @@ hr {
   }
   .faq li{
     border-bottom: 1px rgb(251, 92, 0) solid;
+    width: 500px;;
 
   }
   .faq li:first-child{
@@ -194,7 +239,7 @@ hr {
   }
   .question{
     padding:1em 0;
-    font-size: 19px;
+    font-size: 25px;
     cursor: pointer;
   }
  
@@ -214,7 +259,7 @@ hr {
 .answer{
     overflow:auto; 
     height:0;
-    font-size:15px;
+    font-size:17px;
 
 }
 .answer-opened{
