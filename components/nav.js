@@ -7,9 +7,8 @@ function nav(){
     </div>
   <p ></p>
   <div id="para">    
-  
-   <p><a href=""> Why Harvest? </a></p> 
-   <p> <a href="">Features </a></p>
+   <p><a href="why.html"> Why Harvest? </a></p> 
+   <p> <a href="feature.html">Features </a></p>
    <p><a href=""> Customers </a></p>
    <p> <a href="">Integrations </a></p>
    <p><a href=""> Pricing </a></p>
