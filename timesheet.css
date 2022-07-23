@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #F47B1A;
+    background-color:rgb(251, 93, 1);
     transition: all 0.2s ease;
     z-index: 100;
 }
