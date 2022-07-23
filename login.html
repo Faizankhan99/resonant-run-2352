@@ -76,7 +76,7 @@ let obj={
     if(arr[i].email==obj.mail){
         if(arr[i].pass==obj.pass){
          alert("Login Successfully👍")
-        localStorage.setItem("Name",(arr[i].name))
+        localStorage.setItem("Name",(arr[i].first))
         window.location.href="index.html";
         }else{
             alert("Password not Match!!")
