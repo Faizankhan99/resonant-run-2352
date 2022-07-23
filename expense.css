@@ -113,6 +113,15 @@ button {
 }
 
 a{
+  cursor: pointer;
     text-decoration: none;
     color: white;
+}
+
+#upgr{
+
+  background-color: transparent;
+  color: grey;
+  border: 1px solid grey;
+
 }
