@@ -35,7 +35,7 @@
                     <button>
                         <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-flat-icon-social-media-user-vector-portrait-unknown-human-image-default-avatar-profile-flat-icon-184330869.jpg" alt="
                             avatar">
-                        <span>User</span>
+                        <span onclick="home()" id="use">User</span>
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                     </button>
                     <div class="nav__bar__actions__dropdown__button__list"
@@ -147,3 +147,14 @@
 </body>
 
 </html>
+<script>
+let name=localStorage.getItem("Name") ||[]
+console.log(name);
+  // document.querySelector("#use").innerText=`${name}`
+document.getElementById("use").innerText=name; 
+
+let home=()=>{
+    window.location.href="index.html"
+}
+
+</script>

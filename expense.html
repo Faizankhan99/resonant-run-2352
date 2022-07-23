@@ -26,15 +26,9 @@
             width="20px"
             style="margin-left: 20px"
           />
-          <li onclick="drop()" style="margin-left: 5px">User</li>
+          <li style="margin-left: 5px" id="use" onclick="home()">User</li>
           <div id="dropdown"></div>
-          <!-- <li> My Profile</li>
-                <li> My time report</li>
-                <li> Notifications</li>
-                <li> Refer a friend</li>
-                 <hr>
-                 <li> Switch accounts</li>
-                 <li> Sign out</li> -->
+        
         </ul>
       </div>
     </div>
@@ -44,7 +38,7 @@
       <div id="exdiv"></div>
     </div>
     <div id="thrcont">
-      <!-- <p>Track your first expense now</p> -->
+    
       <img
         src="https://cache.harvestapp.com/static/illustrations/expense_onboard-AAC9C67E.png"
         alt="expense"
@@ -57,13 +51,6 @@
       </p>
     </div>
 
-    <!-- <div id="infoot">
-        <p> You have only 27 days left in your free trail </p>
-        <button id ="upgr">Upgrade</button>
-    </div>
-    <div>
-        <img src="https://www.getharvest.com/hubfs/featured-image-home%20%281%29.png" alt="" width="40px">
-         -->
   </body>
 </html>
 
@@ -152,6 +139,14 @@
     window.location.reload();
   };
 
+let name=localStorage.getItem("Name") ||[]
+console.log(name);
+  // document.querySelector("#use").innerText=`${name}`
+document.getElementById("use").innerText=name; 
+
+let home=()=>{
+    window.location.href="index.html"
+}
   //  let drop=()=>{
 
   //     let cont = document.getElementById("dropdown");

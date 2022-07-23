@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="pricing.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
     <title>Pricing</title>
     <style>
         </style>
         </head>
         <body>
-<div id="nav"></div>
+       <div id="nav"></div>
          <div id="firstsent"><h1>Simple, flexible  pricing</h1></div>
        <div><h3 id="secondsent">Every plan includes every feature, and can scale as your team does.</h3></div> 
               
@@ -213,11 +214,19 @@
         </div>
             </div>
          
+
+            <div id="footer"></div>
         </body>
         </html>
 <script type="module">
   import nav from "./components/nav.js"
   document.querySelector("#nav").innerHTML=nav();
+
+  import footer from "./components/footer.js"
+      document.getElementById("footer").innerHTML = footer();
+  function go(){
+      window.location.href="https://www.getharvest.com/forecast"
+  }
 </script>
 
         <script src="./pricing.js"></script>
