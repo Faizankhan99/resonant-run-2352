@@ -1,0 +1,168 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvest-Invoice</title>
+    <link rel="stylesheet" href="invoice.css">
+</head>
+<body>
+    <div id="mainnav">
+        <ul>
+         <a href="timesheet.html"> <li>Time</li></a>
+         <a href="expense.html"><li>Expenses</li></a>  
+         <a href="#"><li>Projects</li></a>   
+          <a href="#"> <li>Team</li></a>
+          <a href="#"> <li>Reports</li> </a>
+          <a href="invoice.html"> <li>Invoices</li></a> 
+          <a href="#"> <li>Manage</li></a>
+                  </ul>
+        <div id="subnav">
+            <ul>
+                <li>Settings</li>
+                <img src="https://thumbs.dreamstime.com/b/default-avatar-profile-flat-icon-social-media-user-vector-portrait-unknown-human-image-default-avatar-profile-flat-icon-184330869.jpg" alt="user" width="20px" style="margin-left: 20px;">
+                <li onclick="drop()" style ="margin-left: 5px;">User</li>
+                <div id="dropdown"></div>
+                <!-- <li> My Profile</li>
+                <li> My time report</li>
+                <li> Notifications</li>
+                <li> Refer a friend</li>
+                 <hr>
+                 <li> Switch accounts</li>
+                 <li> Sign out</li> -->
+
+            </ul>
+        </div>
+        
+    </div>
+    <div id="seccont">
+            <h1>Invoices</h1>
+            <button onclick="invoice()">+ New Invoice</button>
+            <div id ="exdiv"></div>
+    </div>
+    <div id="thrcont">
+        <!-- <p>Track your first expense now</p> -->
+        <img src="https://cache.harvestapp.com/static/illustrations/invoices_onboard-7269B096.png" alt="invoice" style="margin-top: 40px;">
+        <p>
+            Create customized (and handsome!) invoices in under a minute. <br>
+            With online payment, you’ll get paid twice as fast.
+        </p>
+    </div>
+
+    <!-- <div id="infoot">
+        <p> You have only 27 days left in your free trail </p>
+        <button>Upgrade</button>
+    </div>
+    <div>
+        <img src="https://www.getharvest.com/hubfs/featured-image-home%20%281%29.png" alt="">
+         -->
+    
+</body>
+</html>
+
+<script>
+ 
+ let invoice=()=>{
+   
+    let cont = document.getElementById("exdiv");
+    cont.innerHTML="";
+    cont.style.border="1px solid rgb(251,93,1)";
+    let btnexp = document.querySelector("button");
+    btnexp.style.backgroundColor="rgb(158,208,169)";
+    btnexp.style.cursor="not-allowed";
+
+    let div1 = document.createElement("div");
+    
+    let clnt = document.createElement("label");
+    clnt.innerText="Client";
+    clnt.setAttribute("class","clnt");
+
+    let clin = document.createElement("input");
+    clin.placeholder="Choose a client...";
+    clin.setAttribute("id","tagin")
+     
+    let newbtn = document.createElement("button");
+    newbtn.innerText="+ New Client";
+    newbtn.setAttribute("id","newbtn");
+
+    div1.append(clnt,clin,"or",newbtn);
+
+    // ************************************************************************************************
+    
+    let divmain =document.createElement("div");
+    divmain.setAttribute("id", "maindiv");
+    let div2=document.createElement("div");
+    div2.setAttribute("id", "div2");
+
+    let intype = document.createElement("label");
+    intype.innerText="Invoice type";
+    intype.setAttribute("class","clnt")
+    div2.append(intype);
+
+    let divin = document.createElement("div");
+    divin.setAttribute("id","labelin")
+    
+    let fst= document.createElement("div");
+    let inp1 = document.createElement("input");
+    inp1.type="radio";
+    let crin= document.createElement("label");
+    crin.innerText="Create an invoice for tracked time and expense";
+    fst.append(inp1,crin);
+
+    let snd= document.createElement("div");
+    let inp2=document.createElement("input");
+    inp2.type="radio";
+    let crin2 = document.createElement("label");
+    crin2.innerText="Create a black invoice that can be issued on a recurring schedule.";
+    snd.append(inp2,crin2);
+
+    let thrd = document.createElement("div");
+    let inp3 = document.createElement("input");
+    inp3.type="radio";
+    let crin3 = document.createElement("label");
+    crin3.innerText="Create a black invoice";
+    thrd.append(inp3,crin3);
+
+
+    let btn1 = document.createElement("button");
+    btn1.innerText="Choose Projects"
+    btn1.setAttribute("id","btnsave");
+
+
+    let btn2 = document.createElement("button");
+    btn2.innerText="Cancel";
+    btn2.setAttribute("id","btncan")
+    btn2.addEventListener("click", function(){
+        cancel();
+    })
+    
+    divin.append(fst,snd,thrd);
+    
+    divmain.append(div2,divin);
+
+    cont.append(div1,divmain,btn1,btn2,);
+    
+
+ }
+ 
+ let cancel = ()=>{
+   
+    window.location.reload();
+    
+
+
+
+ }
+
+
+//  let drop=()=>{
+   
+//     let cont = document.getElementById("dropdown");
+    
+
+
+//  }
+
+
+
+</script>
