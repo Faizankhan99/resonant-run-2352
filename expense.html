@@ -26,7 +26,12 @@
             width="20px"
             style="margin-left: 20px"
           />
-          <li style="margin-left: 5px" id="use" onclick="home()">User</li>
+          <style>
+            #use{
+              cursor: pointer;
+            }
+          </style>
+          <li style="margin-left: 5px " id="use"  onclick="home()">User</li>
           <div id="dropdown"></div>
         
         </ul>
@@ -139,12 +144,13 @@
     window.location.reload();
   };
 
-let name=localStorage.getItem("Name") ||[]
+let name= (localStorage.getItem("Name") )||[]
 console.log(name);
   // document.querySelector("#use").innerText=`${name}`
 document.getElementById("use").innerText=name; 
 
 let home=()=>{
+
     window.location.href="index.html"
 }
   //  let drop=()=>{
