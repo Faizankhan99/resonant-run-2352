@@ -26,6 +26,7 @@
 </div>
 </div>
 
+
 <div id="r">
     <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/hero.svg" alt="">
 </div>
@@ -35,6 +36,8 @@
  <p>70,000+ companies track time with Harvest</p><hr></hr>
 </div>
 <!-- logos -->
+
+
 <div id="logo">
     <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-vw.svg?noresize" alt="WW">
     <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-aclu.svg?noresize" alt="aclu">
@@ -45,6 +48,8 @@
     <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-lululemon.svg?noresize" alt="ohm">
     <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-yale.svg?noresize" alt="Yale">
 </div>
+
+
 
 <hr>
 <!-- middle part -->
@@ -115,6 +120,7 @@
     <p>Teams of all sizes, types, and industries trust Harvest to track their time.</p>
 
 </div>
+
 <div id="sliding">
     <div>
             <hr>
@@ -201,6 +207,18 @@ function go(){
 }
 </script>
 
+
+<!-- <script type="module" >
+    import nav from "./components/nav.js"
+    document.getElementById("nav").innerHTML =nav();
+  
+  
+    import footer from "./components/footer.js"
+      document.getElementById("footer").innerHTML = footer();
+  function go(){
+      window.location.href="https://www.getharvest.com/forecast"
+  } -->
+
 <script>
 
 
@@ -230,6 +248,7 @@ function go(){
   let slide=JSON.parse(localStorage.getItem("arr"))
   let con=document.querySelector("#sliding")
   let i=0
+
   let id;
   id=setInterval(function() {
   if(i==slide.lenght){
@@ -257,3 +276,15 @@ i++
   
   
   </script>
+
+  <!-- 
+<div id="logo">
+    <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-vw.svg?noresize" alt="WW">
+    <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-aclu.svg?noresize" alt="aclu">
+    <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-conde.svg?noresize" alt="CONDENAST">
+    <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-dell.svg?noresize" alt="DELL">
+    <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-amnesty.svg?noresize" alt="amnesty internationa">
+    <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-deloitte.svg?noresize" alt="Delo">
+    <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-lululemon.svg?noresize" alt="ohm">
+    <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-yale.svg?noresize" alt="Yale">
+</div> -->
