@@ -67,6 +67,10 @@ console.log("imnner")
      email:document.querySelector("#email").value,
      pass:document.querySelector("#pass").value,
     }
+
+    // company:document.querySelector("#company").value,
+    //  email:document.querySelector("#email").value,
+    //  pass:document.querySelector("#pass").value,
     if(check(obj.email)==true){
         arr.push(obj)
         localStorage.setItem("singup",JSON.stringify(arr))
